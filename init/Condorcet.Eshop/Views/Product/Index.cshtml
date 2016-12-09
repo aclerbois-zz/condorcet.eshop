@@ -1,4 +1,6 @@
-﻿<div id="shop">
+﻿@model Condorcet.Eshop.Models.Product
+
+<div id="shop">
     <header id="page-title">
         <div class="container">
             <h1>Condorcet Christmas Esho</h1>
@@ -14,22 +16,23 @@
             <div class="col-sm-6 col-md-6">
                 <div class="controlls-over product-image">
                     <div>
-                        <img alt="" class="img-responsive" src="<!-- Product Picture-->">
+                        <img alt="" class="img-responsive" style="max-width:100%" src="@Model.Picture">
                     </div>
                 </div>
             </div>
 
             <div class="col-sm-6 col-md-6">
                 <form class="form-inline productDescription noajax">
-                    <h2 class="product-title"><!-- Product Name--></h2>
-                    <span class="code">BRAND: <!-- Product Brand--></span>
+                    <h2 class="product-title">@Model.Name</h2>
+                    <span class="code">BRAND: @Model.Brand</span>
+                    <span class="code">STOCK: @Model.Stock</span>
                     <div class="productRowInfo">
-                        <span><!-- Product Price --></span>
+                        <span>@Model.Price €</span>
                     </div>
                     <div class="desc">
                         <h3 class="page-header">DESCRIPTION</h3>
                         <p>
-                            <!-- Product Picture-->
+                            @Model.Description
                         </p>
                     </div>
                 </form>

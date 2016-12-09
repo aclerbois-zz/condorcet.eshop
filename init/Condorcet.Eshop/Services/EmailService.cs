@@ -1,6 +1,7 @@
-﻿using Condorcet.Eshop.Interfaces;
-using System.Net;
+﻿using System;
+using Condorcet.Eshop.Interfaces;
 using System.Net.Mail;
+using System.Net;
 
 namespace Condorcet.Eshop.Services
 {
@@ -10,7 +11,7 @@ namespace Condorcet.Eshop.Services
         {
             var client = new SmtpClient("relay.skynet.be", 587)
             {
-                Credentials = new NetworkCredential("adrien.clerbois@skynet.be", "xxxxxx"),
+                Credentials = new NetworkCredential("adrien.clerbois@skynet.be", "xxxxx"),
                 EnableSsl = true
             };
 
