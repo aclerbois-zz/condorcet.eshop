@@ -1,0 +1,41 @@
+﻿@model Condorcet.Eshop.Models.Product
+
+<div id="shop">
+    <header id="page-title">
+        <div class="container">
+            <h1>Condorcet Christmas Eshop</h1>
+
+            <ul class="breadcrumb">
+                <li><a href="@Url.Action("Index","Home")">Home</a></li>
+                <li class="active">Product</li>
+            </ul>
+        </div>
+    </header>
+    <section class="container">
+        <div class="row">
+            <div class="col-sm-6 col-md-6">
+                <div class="controlls-over product-image">
+                    <div>
+                        <img alt="" class="img-responsive" src="@Model.Picture" style="max-width:100%;">
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6">
+                <form class="form-inline productDescription noajax">
+                    <h2 class="product-title">@Model.Name</h2>
+                    <span class="code">BRAND: @Model.Brand</span>
+                    <div class="productRowInfo">
+                        <span>@Model.Price €</span>
+                    </div>
+                    <div class="desc">
+                        <h3 class="page-header">DESCRIPTION</h3>
+                        <p>
+                            @Model.Description
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <hr />
+    </section>
+</div>

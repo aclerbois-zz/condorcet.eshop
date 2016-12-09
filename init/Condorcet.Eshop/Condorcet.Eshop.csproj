@@ -177,6 +177,7 @@
     <Content Include="Content\css\_white_menu.css" />
     <Content Include="Content\fonts\fontawesome-webfont.svg" />
     <Content Include="Content\images\1x1.png" />
+    <Content Include="Content\images\404.jpg" />
     <Content Include="Content\images\avatar.png" />
     <Content Include="Content\images\backgrounds\bg1-min.jpg" />
     <Content Include="Content\images\backgrounds\bg2-min.jpg" />
@@ -200,6 +201,7 @@
     <Content Include="Content\images\cc\ico-mastercard.jpg" />
     <Content Include="Content\images\cc\ico-paypal.jpg" />
     <Content Include="Content\images\cc\ico-visa.jpg" />
+    <Content Include="Content\images\cover.png" />
     <Content Include="Content\images\covers\cover_1.jpg" />
     <Content Include="Content\images\covers\cover_2.jpg" />
     <Content Include="Content\images\covers\cover_3.jpg" />
@@ -2469,6 +2471,7 @@
     <Content Include="Content\images\demo\vision-min.jpg" />
     <Content Include="Content\images\demo\yellow-min.jpg" />
     <Content Include="Content\images\dummy.png" />
+    <Content Include="Content\images\email_sent.jpg" />
     <Content Include="Content\images\email_template\readme.txt" />
     <Content Include="Content\images\email_template\social_icon1.png" />
     <Content Include="Content\images\email_template\social_icon1_default.png" />
@@ -3245,10 +3248,9 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Product\Index.cshtml" />
+    <Content Include="Views\Home\Email.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
